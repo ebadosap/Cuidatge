@@ -1,0 +1,616 @@
+/*===== GENERAL =====*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    color: #231F20;
+}
+
+main {
+	margin: 0 auto;
+	max-width: 1200px;
+}
+
+h1 {
+    font-size: 26px;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+p {
+    font-size: 18px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+/*===== HEADER =====*/
+
+header {
+    width: auto;
+    height: auto;
+}
+
+.URV {
+    padding: 8px 0 4px 0;
+    background-color: #90292A;
+}
+
+.URV img {
+    width: 302px;
+    height: auto;
+    margin-left: 28px;
+}
+
+.logo-cuidatge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #000000;
+}
+
+
+/*===== INDEX =====*/
+
+.presentacio {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    gap: 20px;
+    padding: 3% 0 2% 0;
+    background-color: #DBD9D6;
+}
+
+.carrusel {
+    flex: 1 0 35%;
+}
+
+.conteCarrusel {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+
+.itemCarrusel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.itemCarruselTarjeta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.itemCarruselTarjeta img {
+    width: 250px;
+    height: auto;
+}
+
+.itemCarruselFletxes {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px; 
+}
+
+#itemCarrusel-1,
+#itemCarrusel-2,
+#itemCarrusel-3 {
+    background-color: #DBD9D6;
+    min-width: 350px;
+}
+
+.conteCarruselController {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.conteCarruselController a {
+    text-decoration: none;
+    font-size: 32px;
+    color: #808080;
+}
+
+.itemCarruselFletxes a {
+    width: 30px;
+    height: auto;
+}
+
+.descripcio {
+    flex: 1 0 60%;
+    min-width: 300px;
+    padding: 16px;
+    margin: 0 12px 0 0;
+}
+
+.descripcio h1 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.descripcio p {
+    text-align: justify;
+    padding-bottom: 6px;
+}
+
+
+.motor-de-cerca {
+    padding-bottom: 8px;
+    background-color: #90292b67;
+    margin: 20px auto;
+ }
+
+.menu-hamburguesa {
+    display: none;
+}
+
+.menu-cerca ul {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #90292A;
+}
+
+.menu-cerca li {
+    width: 320px;
+    height: auto;
+    text-align: center;
+    padding: 20px 0 20px 0;
+    margin: auto;
+}
+
+.menu-cerca a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.cercador {
+    margin: 12px auto;
+    height: auto;
+    padding: 8px 20px 8px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+#cercar {
+    margin-top: 5px;
+    padding: 8px 200px 8px 5px;
+
+}
+
+.cercador img {
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 10px;
+    padding: 5px;
+    width: 35px;
+    height: auto;
+    background-color: #90292A;
+ }
+
+.instruccions-cerca {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+    background-color: #DBD9D6;
+}
+
+.instruccions-cerca h1 {
+    flex: 1 0 100%;
+    justify-content: center;
+    text-align: center;
+    margin: 30px;
+}
+
+.booleans,
+.truncaments {
+    flex: 1 0 40%;
+    text-align: start;
+    margin-left: 50px;
+}
+
+.booleans h2,
+.truncaments h2 {
+    margin-bottom: 15px;
+
+}
+
+.booleans li,
+.truncaments li {
+    margin: 0 50px 5px 0;
+}
+
+ /*===== CERCA =====*/
+
+ .base-de-dades {
+    display: flex;
+    gap: 36px;
+    margin-bottom: 20px;
+ }
+
+ #menu-base-de-dades {
+    display: none;
+ }
+
+ .filtres {
+    display: flex;
+    min-width: 300px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: #DBD9D6;
+
+ }
+
+ .filtres h1 {
+    padding: 15px;
+ }
+
+ .filtres h2 {
+    margin: 10px 0 0 10px;
+    padding: 10px;
+ }
+
+ .filtres h3 {
+    margin-left: 10px;
+    padding: 5px 0 0 10px;
+ }
+
+ .filtres li {
+    margin: 5px 0 5px 0;
+    padding: 0 0 6px 20px;
+ }
+
+ .resultats {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+ }
+
+
+ .resultats h1 {
+    padding: 15px;
+ }
+
+ .presentacio-resultats {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    background-color: #DBD9D6;
+ }
+
+ .presentacio-resultats h1 {
+    flex: 1 0 100%;
+ }
+
+.presentacio-resultats div{
+    padding: 20px;
+    flex: 1 0 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#area-1,
+#area-2,
+#area-3 {
+    padding: 5px 30px 5px 3px;
+}
+
+.resultats-cerca {
+    background-color: #DBD9D6;
+    margin-top: 10px;
+}
+
+ .resultats-cerca input {
+    margin-left: -15px;
+ }
+
+ .resultats-cerca li {
+    margin-top: 5px;
+    padding-left: 40px;
+ }
+
+ .resultats-cerca ul {
+    margin: 20px 15px 10px 0;
+ }
+
+ .resultats-cerca a {
+    text-decoration: none;
+    color: #90292A;
+ }
+
+.numero-pagines {
+    padding: 50px 0 30px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #DBD9D6;
+}
+
+.numero-pagines img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: auto;
+}
+
+.numero-pagines a {
+    text-decoration: none;
+    color: #231F20;
+}
+
+.numero-pagines ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.numero-pagines li {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1;
+    padding: 5px;
+    font-size: 18px;
+}
+
+
+ /*===== FITXA BIBLIOGRÀFICA =====*/
+
+ .fletxa-torna-cerca {
+    background-color: #DBD9D6;
+    margin-top: 20px;
+ }
+
+ .fletxa-torna-cerca img {
+    margin: 20px 0 0 2%;
+    width: 50px;
+    height: auto;
+    background-color: #DBD9D6;
+ }
+
+ .fitxa {
+    margin: 0 0 20px 0;
+    padding: 1% 0 3% 0;
+    background-color: #DBD9D6;
+
+ }
+
+ .fitxa h1 {
+    margin: 0 4% 2% 4%;
+    padding: 1%;
+ }
+
+ .fitxa li {
+    margin: 0 5% 0 5%;
+    padding: 1%;
+    text-align: justify;
+ }
+
+ .fitxa a {
+    text-decoration: none;
+    color:#90292A;
+ }
+
+
+ /*===== FOOTER =====*/
+
+ footer {
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    flex-wrap: wrap;
+    background-color: #90292A;
+    color: #FFFFFF;
+}
+
+.logo-CRAI {
+    width: 250px;
+    height: auto;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-CRAI img {
+    height: auto;
+    width: 300px;
+}
+
+.menu-suport {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-suport ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.menu-suport li {
+    min-width: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1;
+    padding: 5px;
+}
+
+.menu-suport a {
+    min-width: 130px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 14px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.informacio {
+    min-width: 350px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.informacio p {
+    padding: 2px;
+    font-size: 14px;
+}
+
+
+ /*===== MEDIA QUERIES =====*/
+
+ @media (max-width: 950px) {
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+
+
+    .URV {
+        display: flex;
+        background-color: #90292A;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-hamburguesa {
+        display: flex;
+        min-width: 50px;
+        margin-top: 15px;
+        margin-left: -50px;
+    }
+
+    .menu-hamburguesa img {
+        width: 65px;
+        height: auto;
+    }
+
+    .motor-de-cerca {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cercador {
+        margin: 10px 0 5px 0;
+    }
+
+    #cercar {
+        margin-left: 30px;
+        padding: 8px 40px 8px 5px;
+    }
+    
+    .menu-cerca {
+        display: none;
+    }
+
+    .booleans,
+    .truncaments {
+    flex: 1 0 50%;
+    margin-left: 15px;
+    }
+
+    .booleans li,
+    .truncaments li {
+        margin: 0 15px 5px 0;
+    }
+
+    .booleans {
+        margin-bottom: 15px;
+    }
+
+    .filtres{
+        display: none;
+    }
+
+    .presentacio-resultats {
+        display: none;
+    }
+
+    .numero-pagines {
+        display: none;
+    }
+
+    #menu-base-de-dades {
+        margin: 20px 0 10px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #90292A;
+    }
+    #menu-base-de-dades li{
+        flex: 1 0 33%;
+        padding: 10px;
+        text-align: center;
+        border-right: 1px solid #FFFFFF;
+    }
+
+    #menu-base-de-dades a{
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+
+    .menu-suport ul {
+       flex-wrap: wrap;
+       min-width: 300px;
+    }
+
+ }
