@@ -17,11 +17,11 @@ main {
 }
 
 h1 {
-    font-size: 26px;
+    font-size: 24px;
 }
 
 h2 {
-    font-size: 22px;
+    font-size: 20px;
 }
 
 h3 {
@@ -29,11 +29,15 @@ h3 {
 }
 
 p {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 ul {
     list-style-type: none;
+}
+
+li{
+    font-size: 16px;
 }
 
 
@@ -83,7 +87,6 @@ header {
     margin: 20px auto;
     gap: 20px;
     padding: 3% 0 2% 0;
-    background-color: #DBD9D6;
 }
 
 .carrusel {
@@ -130,7 +133,6 @@ header {
 #itemCarrusel-1,
 #itemCarrusel-2,
 #itemCarrusel-3 {
-    background-color: #DBD9D6;
     min-width: 350px;
 }
 
@@ -231,34 +233,33 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-bottom: 20px;
-    padding-bottom: 30px;
-    background-color: #DBD9D6;
+    margin: 40px auto;
 }
 
 .instruccions-cerca h1 {
     flex: 1 0 100%;
     justify-content: center;
     text-align: center;
-    margin: 30px;
+    margin-bottom: 20px;
 }
 
 .booleans,
 .truncaments {
     flex: 1 0 40%;
     text-align: start;
-    margin-left: 50px;
+    margin-left: 10px;
 }
 
 .booleans h2,
 .truncaments h2 {
     margin-bottom: 15px;
+    text-align: center;
 
 }
 
 .booleans li,
 .truncaments li {
-    margin: 0 50px 5px 0;
+    margin: 0 0px 5px 0;
 }
 
  /*===== CERCA =====*/
@@ -279,7 +280,6 @@ header {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    background-color: #DBD9D6;
 
  }
 
