@@ -44,9 +44,17 @@ header {
     height: auto;
 }
 
-.URV {
-    padding: 8px 0 4px 0;
+.topbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #90292A;
+}
+.URV {
+    max-width: 1200px;
+    flex: 1;
+    padding: 8px 0 4px 0;
+    
 }
 
 .URV img {
@@ -59,7 +67,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid #000000;
 }
 
 
