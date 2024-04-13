@@ -13,7 +13,7 @@ body {
 
 main {
 	margin: 0 auto;
-	max-width: 1200px;
+	max-width: 1240px;
 }
 
 h1 {
@@ -51,22 +51,27 @@ header {
     background-color: #90292A;
 }
 .URV {
-    max-width: 1200px;
+    max-width: 1240px;
     flex: 1;
-    padding: 8px 0 4px 0;
+    padding: 8px 0 4px 15px;
     
 }
 
 .URV img {
     width: 302px;
     height: auto;
-    margin-left: 28px;
 }
 
 .logo-cuidatge {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-bottom: 1px solid #000000;
+}
+
+.logo-cuidatge img {
+    width: 92%;
+    height: auto;
 }
 
 
