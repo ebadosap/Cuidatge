@@ -17,7 +17,7 @@ main {
 }
 
 h1 {
-    font-size: 24px;
+    font-size: 22px;
 }
 
 h2 {
@@ -48,33 +48,48 @@ header {
     height: auto;
 }
 
+.logo-escriptori-URV {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
 .topbar{
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #90292A;
 }
-.URV {
+
+.logotip-URV {
     max-width: 1240px;
     flex: 1;
     padding: 8px 0 4px 15px;
-    
 }
 
-.URV img {
+.logotip-URV img {
     width: 302px;
     height: auto;
 }
 
-.logo-cuidatge {
+.downbar{
     display: flex;
     justify-content: center;
     align-items: center;
     border-bottom: 1px solid #000000;
 }
 
-.logo-cuidatge img {
-    width: 92%;
+.logotip-cuidatge {
+    max-width: 1240px;
+    flex: 1;
+    padding: 20px 0 3px 15px;
+}
+
+.logotip-cuidatge img {
+    width: 50%;
     height: auto;
 }
 
@@ -180,28 +195,12 @@ header {
     margin: 20px auto;
  }
 
-
-.menu-cerca ul {
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #90292A;
-}
-
-.menu-cerca li {
-    width: 320px;
-    height: auto;
+.motor-de-cerca h1 {
     text-align: center;
-    padding: 20px 0 20px 0;
-    margin: auto;
-}
-
-.menu-cerca a {
+    padding: 10px;
+    background-color: #90292A;
     color: #FFFFFF;
-    text-decoration: none;
-    font-size: 24px;
-}
+ }
 
 .cercador {
     margin: 12px auto;
@@ -506,8 +505,11 @@ header {
     }
 
 
-
-    .URV {
+    .logo-escriptori-URV {
+        display: none;
+    }
+    .logotip-URV {
+        padding: 8px 0 4px 0;
         display: flex;
         background-color: #90292A;
         justify-content: center;
