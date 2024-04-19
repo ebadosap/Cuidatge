@@ -516,12 +516,20 @@ header {
         justify-content: center;
         align-items: center;
     }
+    .logotip-URV img {
+        width: 300px;
+        height: auto;
+    }
 
     .logotip-cuidatge {
         padding: 20px 0 7px 0;
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .logotip-cuidatge img {
+        width: 300px;
+        height: auto;
     }
 
     #cercar {
