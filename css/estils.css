@@ -85,11 +85,11 @@ header {
 .logotip-cuidatge {
     max-width: 1240px;
     flex: 1;
-    padding: 40px 0 25px 15px;
+    padding: 25px 0 18px 15px;
 }
 
 .logotip-cuidatge img {
-    width: 360px;
+    width: 302px;
     height: auto;
 }
 
