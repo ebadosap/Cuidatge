@@ -229,39 +229,47 @@ header {
     background-color: #90292A;
  }
 
-.instruccions-cerca {
+ .instruccions-cerca {
+    padding: 20px;
+ }
+ 
+ 
+.instruccions-cerca h1{
+    text-align: center;
+    padding: 20px;
+}
+
+.instruccions-cerca h2 {
+    margin: 15px;
+}
+
+.instruccions-cerca h2 {
+    margin: 15px;
+}
+
+.booleans {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 40px auto;
+    margin: 15px;
 }
 
-.instruccions-cerca h1 {
-    flex: 1 0 100%;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.booleans,
 .truncaments {
-    flex: 1 0 40%;
-    text-align: start;
-    margin-left: 10px;
+    display: flex;
+    margin: 15px;
 }
 
-.booleans h2,
-.truncaments h2 {
-    margin-bottom: 15px;
-    text-align: center;
+
+.booleans img {
+    width: 300px;
+    height: auto;
+    margin-left: 100px;
 
 }
+.truncaments img {
+    width: 100px;
+    height: auto;
+    margin-left: 200px;
 
-.booleans li,
-.truncaments li {
-    margin: 0 0px 5px 0;
 }
-
  /*===== CERCA =====*/
 
  .base-de-dades {
@@ -555,6 +563,11 @@ header {
 
     .booleans {
         margin-bottom: 15px;
+    }
+
+    .booleans img,
+    .truncaments img {
+        display: none;
     }
 
     .filtres{
