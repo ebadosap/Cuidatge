@@ -325,7 +325,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 20px;
-    background-color: #DBD9D6;
+    background-color: #F2F2F2;
  }
 
  .presentacio-resultats h1 {
@@ -347,7 +347,7 @@ header {
 }
 
 .resultats-cerca {
-    background-color: #DBD9D6;
+    background-color: #F1F1F1;
     margin-top: 10px;
 }
 
@@ -374,7 +374,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #DBD9D6;
+    background-color: #F1F1F1;
 }
 
 .numero-pagines img {
@@ -409,7 +409,7 @@ header {
  /*===== FITXA BIBLIOGRÀFICA =====*/
 
  .fletxa-torna-cerca {
-    background-color: #DBD9D6;
+    background-color: #F1F1F1;
     margin-top: 20px;
  }
 
@@ -417,13 +417,13 @@ header {
     margin: 20px 0 0 2%;
     width: 50px;
     height: auto;
-    background-color: #DBD9D6;
+    background-color: #F1F1F1;
  }
 
  .fitxa {
     margin: 0 0 20px 0;
     padding: 1% 0 3% 0;
-    background-color: #DBD9D6;
+    background-color: #F1F1F1;
 
  }
 
